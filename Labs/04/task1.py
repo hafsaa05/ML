@@ -85,9 +85,8 @@ print("\n========= Dataset2: Decision Tree (Entropy + Pruning) =========")
 print("Training Accuracy:", dt_entropy_pruned2.score(X2_train, y2_train) * 100, "%")
 print("Testing Accuracy :", accuracy_score(y2_test, pred_entropy_pruned2) * 100, "%")
 
-# ==========================
-# 5️⃣ Actual vs Predicted (Dataset2, Entropy + Pruning)
-# ==========================
+#  Actual vs Predicted (Dataset2, Entropy + Pruning)
+
 comparison_df = pd.DataFrame({
     'Actual': y2_test,
     'Predicted': pred_entropy_pruned2
@@ -111,7 +110,6 @@ plt.title("Dataset2: Decision Tree Visualization (Entropy + Pruning)")
 plt.show()
 
 #  Accuracy Bar Plots
-
 dataset1_models = [("Default Gini", dt_default),
                    ("Gini Pruned", dt_gini_pruned),
                    ("Entropy", dt_entropy),
